@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="pagamento">
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script>
+      new Vue({
+        el: "#pagamento",
+        template: `
+        <div class="formulario">
+            <header>
+                <p>Formulário para compra de 
+                <br> <strong>Pacote de adesivos</strong></p>
+                <i class="fa-solid fa-box-open"></i>
+            </header>
+              <div class="main">
+                <div class="adesivos_tipos">
+                  <h4>Quais adesivos?</h4>
+                  <div class="adesivos_main">
+                    <div class="react">
+                      <input  id="react" type="checkbox" />
+                      <label for="react">React</label>
+                    </div>
+                    <div class="vue">
+                      <input  id="vue" type="checkbox" />
+                      <label for="vue">Vue</label>
+                    </div>
+                    <div class="angular">
+                      <input  id="angular" type="checkbox" />
+                      <label for="angular">Angular</label>
+                    </div>
+                  </div>
+                
+                </div>
+                <div class="adesivos_quantidade">
+                  <h4>Quantos adesivos de cada?</h4>
+                  <div class="quantidade_main">
+                    <span id="menos"><i class="fa-solid fa-minus"></i></span>
+                    <span type="number" name="quantidade" id="quantidade">01</span>
+                    <span id="mais"><i class="fa-solid fa-plus"></i></span>
+                  </div>
+                  </div>
+                  <div class="obeservacoes">
+                  <h4>Observações:</h4>
+                  <textarea
+                  placeholder="Alguma dúvida? Recado?"
+                  name="observacoes"
+                  id="obeservacoes"
+                  cols="30"
+                  rows="10"></textarea>
+                  </div>
+              
+              <footer>
+                  <button id="enviar" type="submit"><a href="./pagamento.html">ENVIAR</a></button>
+              </footer>
+        </div>
+        
+        `,
+        data() {
+          return {
+            comments: [
+              {
+                name: "Ayrton",
+                message: "Lorem",
+              },
+            ],
+          };
+        },
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

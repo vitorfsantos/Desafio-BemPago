@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="app">
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script>
+      new Vue({
+        el: "#app",
+        template: `
+        <div class="pagamento">
+          <div class="forma_pagamento">
+            <h3>Forma de pagamento:</h3>
+            <div class="opcoes">
+              <div>
+                <input type="radio" name="pagamento_opcoes" id="credito">
+                <label for="credito">Cartão de crédito</label>
+              </div>
+              <div>
+                <input type="radio" name="pagamento_opcoes" id="debito">
+              <label for="debito">Cartão de débito</label>
+              </div>
+              <div>
+                <input type="radio" name="pagamento_opcoes" id="boleto">
+                <label for="boleto">Boleto</label>
+              </div>
+              <div>
+                <input type="radio" name="pagamento_opcoes" id="pix">
+              <label for="pix">Pix</label>
+              </div>
+              
+            </div>
+          </div>
+            
+            <footer>
+              <button onclick="enviar()" id="enviar" type="submit">ENVIAR</button>
+            </footer>
+        </div>
+        
+        `,
+        data() {
+          return {
+            comments: [
+              {
+                name: "Ayrton",
+                message: "Lorem",
+              },
+            ],
+          };
+        },
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

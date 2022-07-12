@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-family: sans-serif;
+    background-color: rgb(167, 11, 167);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.formulario{
+    background-color: rgb(236, 236, 236);
+    height: 80vh;
+    width: 70vh;
+    box-shadow: 3px 5px 5px black;
+    overflow: hidden;
+}
+.pagamento{
+    background-color: rgb(236, 236, 236);
+    height: 80vh;
+    width: 70vh;
+    box-shadow: 3px 5px 5px black;
+    overflow: hidden;
+}
+.formulario header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 120px;
+    padding: 0 15px;
+    font-size: 1.1rem;
+}
+.formulario header i{
+    font-size: 6rem;
+}
+.adesivos_tipos{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding-bottom: 10px;
+}
+.adesivos_tipos input{
+    background-color: rgb(194, 194, 194);
+}
+.adesivos_quantidade{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.quantidade_main{
+    display: flex;
+    gap: 1.6rem;
+}
+.quantidade_main span{
+    background-color: rgb(194, 194, 194);
+    border: 0.5px, solid;
+}
+.quantidade_main span{
+    padding: 6px;
+    background-color: rgb(167, 11, 167);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.quantidade_main span:hover{
+    transform: scale(1.2);
+}
+#quantidade{
+    background-color: rgb(194, 194, 194);
+    color: black;
+}
+.obeservacoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.obeservacoes textarea{
+    resize: none;
+    background-color: rgb(194, 194, 194);
+    border: 0.5px, solid;
+    border-radius: 5px;
+}
+footer{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: rgb(194, 194, 194);
+    height: 60px;
+    
+}
+ button{
+    margin-right: 15px;
+    border: none;
+    background-color: rgb(167, 11, 167);
+    padding: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+a{
+    color: white;
+}
+button:hover{
+    transform: scale(1.2);
+}
+
+.forma_pagamento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 435px;
+    padding-top: 50px;
+}
+.opcoes{
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    gap: 50px;
+}
